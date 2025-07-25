@@ -1,0 +1,256 @@
+.menu-principal {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.list-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.list-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: #444;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.introducao {
+    padding: 30px;
+    margin: 40px auto;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.titulo-principal {
+    font-size: 3.5rem; /* ou qualquer valor que deseje */
+    font-weight: bold;
+    text-align: center;
+    color: white; /* já presente, mas aqui só pra garantir */
+}
+.violencia-domestica {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--color-gray-700);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    color: white;
+}
+.violencia-domestica p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.conteudo-descritivo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: justify;
+    background-color: transparent;
+}
+.botao-retorno {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botao-retorno a {
+    background-color: #440535;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+.sinais {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.como-denunciar {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.telefones-uteis {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.centrosdeapoio {
+    background-color: #ede8e809;  /* fundo claro */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(239, 236, 236, 0.012);
+}
+
+.centrosdeapoio a {
+    color: #de11da;  /* cor do link */
+    text-decoration: underline;
+}
+.ajuda {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+}
+
+
+
+
+/* Estilos gerais do body */
+body {
+    background-image: url(../img/violencia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-gray-100);
+    line-height: 1.6;
+
+}
+    h1, h2, h3, h4, h5, h6, p, li, a, ul {
+    color: white;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    flex-direction: row; /* Alterado para linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    gap: 20px;
+    padding: 20px;
+}
+
+.container-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu de navegação */
+
+.list-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.list-menu a {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .section-principal,
+    .section-segundaria,
+    .section-terceira {
+        max-width: 80%; /* Ajusta a largura para tablets */
+    }
+
+    .h1h2-complete,
+    .h2h1-complete,
+    .h12-complete {
+        font-size: 28px; /* Tamanho maior para tablets */
+    }
+
+    .paragrafos,
+    .prgf,
+    .pr {
+        font-size: 16px; /* Tamanho maior para tablets */
+    }
+}
+/* Telas pequenas: smartphones */
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+    background-position: center top;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container-title,
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .list-menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .list-menu a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .introducao,
+  .conteudo-descritivo,
+  .violencia-domestica,
+  .ajuda,
+  .centrosdeapoio,
+  .sinais,
+  .como-denunciar,
+  .telefones-uteis {
+    font-size: 1.1rem;
+    padding: 15px;
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  .botao-retorno a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

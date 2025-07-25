@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Violentômetro</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <h1>Violentômetro</h1>
+
+    <p>O Violentômetro é uma ferramenta educativa que visa demonstrar os diversos níveis de violência presentes em relacionamentos interpessoais, especialmente os abusivos. Ele ajuda a entender que a violência nem sempre começa com agressão física, mas que coisas como controlar, humilhar ou xingar também são formas de abuso. Serve para mostrar quando algo está errado e incentivar quem sofre ou quem vê, a buscar ajuda.</p>
+
+    <h2>Vamos fazer o teste para identificar sinais de alerta?</h2>
+
+    <p>Selecione os itens que você ou alguém que você conhece está passando por uma das situações relacionadas:</p>
+
+    <h3>Fique Alerta!</h3>
+    <ul>
+        <li class="alert-item" onclick="AlertdeMensagem('Fique alerta! Se alguém tenta te calar ou desvalorizar sua opinião com frequência, isso é abuso emocional.')">1. Diminuindo sua opinião <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Fique alerta! Mentiras constantes podem ser usadas para manipular ou controlar você.')">2. Mentindo <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Fique alerta! Quando alguém mexe nas suas coisas sem consentimento, está desrespeitando seus limites. Isso não é normal.')">3. Mexendo em suas coisas <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Fique alerta! Colocar a responsabilidade de tudo em você é manipulação emocional para enfraquecer sua autoestima. Isso é abuso psicológico.')">4. Culpando você por tudo <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Fique alerta! Te chamar de louca(o) não é normal, é uma forma de controle e violência. Isso é abuso psicológico.')">5. Chamando você de louca <span class="alert">( )</span></li>
+    </ul>
+
+    <h3>Reaja a Tempo...</h3>
+    <ul>
+        <li class="alert-item" onclick="AlertdeMensagem('Reaja a tempo: Te humilhar em público é uma forma de agressão emocional. Você merece respeito.')">6. Humilhando você em público <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Reaja a tempo: Chantagear você é um sinal claro de manipulação. Não aceite esse tipo de pressão.')">7. Chantageando você <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Reaja a tempo: Quando alguém ultrapassa seus limites sem seu consentimento, isso é assédio. Você tem o direito de dizer não e de ser respeitada(o). Assédio é inaceitável e precisa ser denunciado.')">8. Assediando você <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Reaja a tempo: Quem te ameaça está tentando te controlar pelo medo. Intimidação é um sinal claro de abuso. Não aceite isso.')">9. Intimidando/Ameaçando você <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Reaja a tempo: Quem te proíbe, te controla. Isso é abuso, não proteção. Controle é um tipo de violência.')">10. Controlando/Proibindo suas ações <span class="alert">( )</span></li>
+    </ul>
+
+    <h3>Peça ajuda</h3>
+
+    <ul>
+        <li class="alert-item" onclick="AlertdeMensagem('Peça ajuda: Destruir suas coisas é uma forma grave de abuso.')"> 11. Destruindo suas coisas <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Peça ajuda: Forçar uma relação sexual é crime. Estupro não é consentimento. Você tem o direito de dizer não.')">12. Forçando uma relação sexual <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Violência física é inaceitável. Procure ajuda imediatamente.')">13. Batendo em você <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Peça ajuda: Prender ou isolar você é crime. Ninguém pode tirar sua liberdade.')">14. Confinando/Aprisionando você <span class="alert">( )</span></li>
+        <li class="alert-item" onclick="AlertdeMensagem('Ameaças à vida são extremamente perigosas. Não hesite em buscar ajuda e denuncie.')">15. Ameaçando sua vida <span class="alert">( )</span></li>
+    </ul>
+
+    <h3>E isso pode terminar em:</h3>
+    <ul>
+        <li class="alert-item" onclick="AlertdeMensagem('FEMINICÍDIO é a consequência mais trágica da violência contra a mulher. Não espere acontecer: denuncie antes que seja tarde demais. Não percorra essa escala fatal. Em caso de perigo, ligue 190.')">16. FEMINICÍDIO <span class="alert">( )</span></li>
+    </ul>
+
+    <p class="help">Se você ou alguém que conhece está sofrendo violência, busque ajuda imediatamente. Interrompa o ciclo antes que seja tarde.  A violência precisa acabar antes que cause danos irreparáveis.</p>
+
+    <div id="messageBox" class="message-box"></div>
+
+    
+<div class="botao-retorno">
+  <a href="../index.html">Voltar à Página Principal</a>
+</div>
+
+    <script>
+        function AlertdeMensagem(mensagem) {
+            const box = document.getElementById('messageBox');
+            box.innerText = mensagem;
+            box.style.display = 'block';
+
+            setTimeout(() => {
+                box.style.display = 'none';
+            }, 4000);
+        }
+    </script>
+
+</body>
+</html>
