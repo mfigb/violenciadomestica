@@ -123,6 +123,14 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3)
 }
+.delegacia {
+    background-color: #ede8e809;  /* fundo claro */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(239, 236, 236, 0.012);
+}
 
 
 
