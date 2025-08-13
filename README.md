@@ -15,4 +15,4 @@ Aqui, você encontrará conteúdos organizados em seções como:
 📞 Canais de denúncia e apoio
 
 
-Caso haja interesse em explorar o site, é possível acessá-lo através do link: https://mfigb.github.io/violenciadomestica/."
+Caso haja interesse em explorar o site, é possível acessá-lo através do link: https://mfigb.github.io/violenciadomestica/.
